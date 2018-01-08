@@ -2414,7 +2414,7 @@
 					width: 8em;
 				}
 
-					ul.major-icons li .icon:before {
+					ul.major-icons li p {
 						-moz-transform: rotate(-45deg);
 						-webkit-transform: rotate(-45deg);
 						-ms-transform: rotate(-45deg);
@@ -2788,11 +2788,12 @@
 					}
 
 			.main.style2 ul.major-icons li .icon {
-				border-color: #ffffff;
+				border-color: white;
 			}
 
 			.main.style2 .icon.major {
-				color: #ffffff;
+				color: white;
+				font-weight: bold;
 			}
 
 /* Header */
@@ -3185,9 +3186,9 @@
 			}
 
 				ul.major-icons li .icon {
-					height: 7em;
-					line-height: 7em;
-					width: 7em;
+					height: 8em;
+					line-height: 8em;
+					width: 8em;
 				}
 
 		/* Main */
@@ -3255,9 +3256,9 @@
 			}
 
 				ul.major-icons li .icon {
-					height: 5em;
-					line-height: 5em;
-					width: 5em;
+					height: 8em;
+					line-height: 8em;
+					width: 8em;
 				}
 
 					ul.major-icons li .icon:before {
@@ -3421,18 +3422,20 @@
 
 	}
 
-	/* .profile-pic {
-		width: 200px;
-		height: 300px;
-	} */
+.profile-pic img {
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+	overflow: hidden;
+}
 
-	.profile-pic img {
-		height: 100px;
-		width: 100px;
-		border-radius: 50%;
-		overflow: hidden;
-	}
+.about-me {
+	color: white;
+}
 
-	.about-me {
-		color: white;
-	}
+.skills {
+	/* display: flex;
+	flex-direction: row;
+	justify-content: center; */
+	margin-left: 5em;
+}
