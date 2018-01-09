@@ -9,7 +9,7 @@
 
 /* Reset */
 
-	html, body, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 		margin: 0;
 		padding: 0;
 		border: 0;
@@ -1991,7 +1991,6 @@
 			height: 1px;
 			margin-top: 1.5em;
 			width: 6em;
-			color: white;
 		}
 
 		header.major h2, header.major h3, header.major h4, header.major h5, header.major h6 {
@@ -2066,7 +2065,7 @@
 		.select-wrapper:before {
 			-moz-osx-font-smoothing: grayscale;
 			-webkit-font-smoothing: antialiased;
-			font-family: FontAwesome;
+			font-family: DevIcon;
 			font-style: normal;
 			font-weight: normal;
 			text-transform: none !important;
@@ -2132,7 +2131,7 @@
 			input[type="radio"] + label:before {
 				-moz-osx-font-smoothing: grayscale;
 				-webkit-font-smoothing: antialiased;
-				font-family: FontAwesome;
+				font-family: DevIcon;
 				font-style: normal;
 				font-weight: normal;
 				text-transform: none !important;
@@ -2232,7 +2231,7 @@
 		.icon:before {
 			-moz-osx-font-smoothing: grayscale;
 			-webkit-font-smoothing: antialiased;
-			font-family: FontAwesome;
+			font-family: DevIcon;
 			font-style: normal;
 			font-weight: normal;
 			text-transform: none !important;
@@ -2277,7 +2276,7 @@
 			.icon.major:before {
 				-moz-osx-font-smoothing: grayscale;
 				-webkit-font-smoothing: antialiased;
-				font-family: FontAwesome;
+				font-family: DevIcon;
 				font-style: normal;
 				font-weight: normal;
 				text-transform: none !important;
@@ -2391,10 +2390,13 @@
 		ul.major-icons {
 			list-style: none;
 			padding-left: 0;
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			flex-wrap: wrap;
 		}
 
 			ul.major-icons li {
-				display: inline-block;
 				padding: 2.5em;
 				text-align: center;
 			}
@@ -2414,7 +2416,7 @@
 					width: 8em;
 				}
 
-					ul.major-icons li p {
+					ul.major-icons li .icon:before {
 						-moz-transform: rotate(-45deg);
 						-webkit-transform: rotate(-45deg);
 						-ms-transform: rotate(-45deg);
@@ -2426,17 +2428,17 @@
 		ul.actions {
 			cursor: default;
 			list-style: none;
-			padding-left: 0;
+			padding-left: 20px;
 		}
 
 			ul.actions li {
 				display: inline-block;
-				padding: 0 3em 0 0;
+				padding: 0 1em 0 0;
 				vertical-align: middle;
 			}
 
-				ul.actions li:first-child {
-					padding-left: 4em;
+				ul.actions li:last-child {
+					padding-right: 0;
 				}
 
 			ul.actions.small li {
@@ -2445,7 +2447,7 @@
 
 			ul.actions.vertical li {
 				display: block;
-				padding: 2em 0 0 0;
+				padding: 1em 0 0 0;
 			}
 
 				ul.actions.vertical li:first-child {
@@ -2704,7 +2706,7 @@
 	}
 
 		.main.style1 {
-			background: black;
+			background: #fff;
 		}
 
 		.main.style2 {
@@ -2788,12 +2790,11 @@
 					}
 
 			.main.style2 ul.major-icons li .icon {
-				border-color: white;
+				border-color: #ffffff;
 			}
 
 			.main.style2 .icon.major {
-				color: white;
-				font-weight: bold;
+				color: #ffffff;
 			}
 
 /* Header */
@@ -3186,9 +3187,9 @@
 			}
 
 				ul.major-icons li .icon {
-					height: 8em;
-					line-height: 8em;
-					width: 8em;
+					height: 7em;
+					line-height: 7em;
+					width: 7em;
 				}
 
 		/* Main */
@@ -3256,9 +3257,9 @@
 			}
 
 				ul.major-icons li .icon {
-					height: 8em;
-					line-height: 8em;
-					width: 8em;
+					height: 5em;
+					line-height: 5em;
+					width: 5em;
 				}
 
 					ul.major-icons li .icon:before {
@@ -3422,20 +3423,9 @@
 
 	}
 
-.profile-pic img {
-	height: 100px;
-	width: 100px;
-	border-radius: 50%;
-	overflow: hidden;
-}
-
-.about-me {
-	color: white;
-}
-
-.skills {
-	/* display: flex;
-	flex-direction: row;
-	justify-content: center; */
-	margin-left: 5em;
-}
+	.profile-pic img {
+		height: 100px;
+		width: 100px;
+		border-radius: 50%;
+		overflow: hidden;
+	}
