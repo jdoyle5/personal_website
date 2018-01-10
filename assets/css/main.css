@@ -2346,7 +2346,7 @@
 	ul {
 		list-style: disc;
 		margin: 0 0 2em 0;
-		padding-left: 1em;
+		/* padding-left: 1em; */
 	}
 
 		ul li {
@@ -2428,7 +2428,7 @@
 		ul.actions {
 			cursor: default;
 			list-style: none;
-			padding-left: 20px;
+			padding-left: 23px;
 		}
 
 			ul.actions li {
@@ -2493,6 +2493,77 @@
 				}
 
 					ul.actions.fit.small li {
+						padding: 0 0 0 0.5em;
+					}
+
+		ul.portfolio-buttons {
+			cursor: default;
+			list-style: none
+			padding: 0px 0px 0px 0px;
+		}
+
+			ul.portfolio-buttons li {
+				display: inline-block;
+				padding: 0 1em 0 0;
+				vertical-align: middle;
+			}
+
+				ul.portfolio-buttons li:last-child {
+					padding-right: 0;
+				}
+
+			ul.portfolio-buttons.small li {
+				padding: 0 0.5em 0 0;
+			}
+
+			ul.portfolio-buttons.vertical li {
+				display: block;
+				padding: 1em 0 0 0;
+			}
+
+				ul.portfolio-buttons.vertical li:first-child {
+					padding-top: 0;
+				}
+
+				ul.portfolio-buttons.vertical li > * {
+					margin-bottom: 0;
+				}
+
+			ul.portfolio-buttons.vertical.small li {
+				padding: 0.5em 0 0 0;
+			}
+
+				ul.portfolio-buttons.vertical.small li:first-child {
+					padding-top: 0;
+				}
+
+			ul.portfolio-buttons.uniform li > * {
+				min-width: 12em;
+			}
+
+			ul.portfolio-buttons.fit {
+				display: table;
+				margin-left: -1em;
+				padding: 0;
+				table-layout: fixed;
+				width: calc(100% + 1em);
+			}
+
+				ul.portfolio-buttons.fit li {
+					display: table-cell;
+					padding: 0 0 0 1em;
+				}
+
+					ul.portfolio-buttons.fit li > * {
+						margin-bottom: 0;
+					}
+
+				ul.portfolio-buttons.fit.small {
+					margin-left: -0.5em;
+					width: calc(100% + 0.5em);
+				}
+
+					ul.portfolio-buttons.fit.small li {
 						padding: 0 0 0 0.5em;
 					}
 
