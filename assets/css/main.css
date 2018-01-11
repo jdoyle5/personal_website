@@ -2500,11 +2500,15 @@
 			cursor: default;
 			list-style: none
 			padding: 0px 0px 0px 0px;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+			align-items: center;
 		}
 
 			ul.portfolio-buttons li {
 				display: inline-block;
-				padding: 0 1em 0 0;
+				padding: 0 0 0 0;
 				vertical-align: middle;
 			}
 
@@ -2564,6 +2568,82 @@
 				}
 
 					ul.portfolio-buttons.fit.small li {
+						padding: 0 0 0 0.5em;
+					}
+		ul.contact-buttons {
+			cursor: default;
+			list-style: none
+			padding: 0px 0px 0px 0px;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+			align-items: center;
+			margin: 0 7em 0 9em;
+			/* padding-top: 50px; */
+		}
+
+			ul.contact-buttons li {
+				display: inline-block;
+				padding: 0 0 0 0;
+				vertical-align: middle;
+			}
+
+				ul.contact-buttons li:last-child {
+					padding-right: 0;
+				}
+
+			ul.contact-buttons.small li {
+				padding: 0 0.5em 0 0;
+			}
+
+			ul.contact-buttons.vertical li {
+				display: block;
+				padding: 1em 0 0 0;
+			}
+
+				ul.contact-buttons.vertical li:first-child {
+					padding-top: 0;
+				}
+
+				ul.contact-buttons.vertical li > * {
+					margin-bottom: 0;
+				}
+
+			ul.contact-buttons.vertical.small li {
+				padding: 0.5em 0 0 0;
+			}
+
+				ul.contact-buttons.vertical.small li:first-child {
+					padding-top: 0;
+				}
+
+			ul.contact-buttons.uniform li > * {
+				min-width: 12em;
+			}
+
+			ul.contact-buttons.fit {
+				display: table;
+				margin-left: -1em;
+				padding: 0;
+				table-layout: fixed;
+				width: calc(100% + 1em);
+			}
+
+				ul.contact-buttons.fit li {
+					display: table-cell;
+					padding: 0 0 0 1em;
+				}
+
+					ul.contact-buttons.fit li > * {
+						margin-bottom: 0;
+					}
+
+				ul.contact-buttons.fit.small {
+					margin-left: -0.5em;
+					width: calc(100% + 0.5em);
+				}
+
+					ul.contact-buttons.fit.small li {
 						padding: 0 0 0 0.5em;
 					}
 
@@ -3156,7 +3236,7 @@
 			font-size: 0.8em;
 			list-style: none;
 			margin: 2em 0 0 0;
-			padding: 0;
+			padding: 0 0 0 1em;
 		}
 
 			#footer .copyright li {
@@ -3494,9 +3574,16 @@
 
 	}
 
-	.profile-pic img {
-		height: 100px;
-		width: 100px;
-		border-radius: 50%;
-		overflow: hidden;
-	}
+.profile-pic img {
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.contact-div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
