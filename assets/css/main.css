@@ -3167,7 +3167,7 @@
 
 	#footer {
 		padding: 6em 0 6em 0 ;
-		background-color: #4686a0;
+		/* background-color: #4686a0; */
 		color: rgba(255, 255, 255, 0.75);
 		background-attachment: fixed,							fixed,							fixed;
 		background-image: url("http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512110637/Photo_Nov_02_2_42_48_PM_c9ullm.jpg");
