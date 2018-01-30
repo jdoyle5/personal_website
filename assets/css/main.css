@@ -2980,10 +2980,10 @@
 
 	#header {
 		padding: 9em 0 9em 0 ;
-		background-color: #4686a0;
+		/* background-color: #4686a0; */
 		color: rgba(255, 255, 255, 0.75);
 		background-attachment: fixed,							fixed,							fixed;
-		background-image: url("images/overlay2.png"), url("images/overlay3.svg"), linear-gradient(45deg, #9dc66b 5%, #4fa49a 30%, #4361c2);
+		background-image: url("http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512110637/Photo_Nov_02_5_59_55_PM_v5p4cf.jpg");
 		background-position: top left,						center center,					center center;
 		background-size: auto,							cover,							cover;
 		overflow: hidden;
@@ -3170,7 +3170,7 @@
 		background-color: #4686a0;
 		color: rgba(255, 255, 255, 0.75);
 		background-attachment: fixed,							fixed,							fixed;
-		background-image: url("images/overlay2.png"), url("images/overlay4.svg"), linear-gradient(45deg, #4361c2, #4fa49a 50%, #9dc66b 95%);
+		background-image: url("http://res.cloudinary.com/dn7nwtnr4/image/upload/v1512110637/Photo_Nov_02_2_42_48_PM_c9ullm.jpg");
 		background-position: top left,						center center,					center center;
 		background-size: auto,							cover,							cover;
 		text-align: center;
