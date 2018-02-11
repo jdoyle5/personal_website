@@ -2578,7 +2578,7 @@
 			flex-direction: row;
 			justify-content: space-around;
 			align-items: center;
-			margin: 0 7em 0 8em;
+			margin: 0 19em 0 20em;
 			/* padding-top: 50px; */
 		}
 
@@ -3618,13 +3618,15 @@
 }
 
 .icons {
-	font-size: 60px;
+	font-size: 36px;
 	padding: 0 0 0 0;
+	opacity: .8;
 }
 
 .icons-two {
-	font-size: 52px;
+	font-size: 30px;
 	padding: 0 0 0 0;
+	opacity: .8;
 }
 
 .button-icons {
