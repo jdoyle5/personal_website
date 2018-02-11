@@ -2272,6 +2272,15 @@ a {
 		.icon.style6:before {
 			color: #6b88e6;
 		}
+		.icon.style7:before {
+			color: #FF3C3C;
+		}
+
+		.icon.style8:before {
+			color: #FF9343;
+		}
+
+
 
 		.icon.major {
 			text-decoration: none;
