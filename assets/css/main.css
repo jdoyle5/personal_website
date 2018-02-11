@@ -9,6 +9,10 @@
 
 /* Reset */
 
+a {
+	text-decoration: none;
+}
+
 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 		margin: 0;
 		padding: 0;
@@ -1829,6 +1833,10 @@
 			color: #6bd4c8;
 		}
 
+		a {
+			border-bottom-color: transparent !important;
+		}
+
 	strong, b {
 		color: #555;
 		font-weight: 400;
@@ -2350,7 +2358,7 @@
 	}
 
 		ul li {
-			padding-left: 0.5em;
+			/* padding-left: 0.5em; */
 		}
 
 		ul.alt {
@@ -2376,7 +2384,8 @@
 
 			ul.icons li {
 				display: inline-block;
-				padding: 0 1.25em 0 0;
+				padding: .5em .5em .5em .5em;
+				opacity: 1;
 			}
 
 				ul.icons li:last-child {
@@ -2574,18 +2583,18 @@
 			cursor: default;
 			list-style: none
 			padding: 0px 0px 0px 0px;
-			display: flex;
-			flex-direction: row;
-			justify-content: space-around;
-			align-items: center;
-			margin: 0 19em 0 20em;
+			display: inline-block;
+			/* flex-direction: row;
+			justify-content: space-around; */
+			/* align-items: center; */
+			margin: 0 19em 0 19em;
 			/* padding-top: 50px; */
 		}
 
 			ul.contact-buttons li {
 				display: inline-block;
 				padding: 0 0 0 0;
-				vertical-align: middle;
+				/* vertical-align: middle; */
 			}
 
 				ul.contact-buttons li:last-child {
@@ -3618,15 +3627,15 @@
 }
 
 .icons {
-	font-size: 36px;
-	padding: 0 0 0 0;
-	opacity: .8;
+	font-size: 30px;
+	margin-right: 5px;
+	/* opacity: .8; */
 }
 
 .icons-two {
 	font-size: 30px;
-	padding: 0 0 0 0;
-	opacity: .8;
+	margin-right: 5px;
+	/* opacity: .8; */
 }
 
 .button-icons {
